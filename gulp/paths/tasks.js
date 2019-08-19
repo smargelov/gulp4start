@@ -8,5 +8,5 @@ module.exports = [
     './gulp/tasks/fonts',
     './gulp/tasks/sass',
     './gulp/tasks/scripts',
-    './gulp/tasks/smart-grid'
+    // './gulp/tasks/smart-grid'
 ];

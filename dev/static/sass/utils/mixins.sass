@@ -11,32 +11,6 @@
 	right: $num
 	left: $num
 
-=position($position, $top = null, $right = null,  $bottom = null, $left = null)
-	position: $position
-	if $left is a 'unit' or $left == 'auto'
-		left: $left
-	if $right is a 'unit' or $right == 'auto'
-		right: $right
-	if $top is a 'unit' or $top == 'auto'
-		top: $top
-	if $bottom is a 'unit' or $bottom == 'auto'
-		bottom: $bottom
-
-=absolute($top = null, $right = null,  $bottom = null, $left = null)
-	+position(absolute, $top, $right, $bottom, $left)
-
-=fixed($top = null, $right = null,  $bottom = null, $left = null)
-	+position(fixed, $top, $right, $bottom, $left)
-
-=relative($top = null, $right = null,  $bottom = null, $left = null)
-	+position(relative, $top, $right, $bottom, $left)
-
-=rem($size)
-	return ($size/16)rem
-
-=size($a, $b = false)
+=size($a,$b: $a)
 	width: $a
-	if $b
-		height: $b
-	else
-		height: $a
+	height: $b

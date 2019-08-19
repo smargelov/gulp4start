@@ -14,7 +14,7 @@ module.exports = function () {
                     message: error.message
                 };
             }))
-            .pipe(sm.gp.htmlBeautify())
+            .pipe($.gp.htmlBeautify())
             .pipe($.gulp.dest('./build/'))
             .on('end', $.browserSync.reload);
     });
